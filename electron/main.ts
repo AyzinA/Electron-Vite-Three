@@ -25,7 +25,7 @@ async function createWindow() {
     await win.loadURL(url);
     // win.webContents.openDevTools();
   } else {
-    await win.loadFile(path.join(__dirname, '../dist/index.html'));
+    win.loadFile(path.join(__dirname, '..', 'dist', 'index.html'));
   }
 }
 
